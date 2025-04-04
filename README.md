@@ -1,9 +1,8 @@
 # NestJS Handbook
 
 ## Introduction
-- [NestJS 소개](introduction/00-introduction)
+- [NestJS 소개](introduction/00-introduction.md)
 
-## Overveiw
-- [첫 단계](overview/00-first-step)
-
-- [컨트롤러](overview/01-controllers)
+## Overview
+- [첫 단계](overview/00-first-step.md)
+- [컨트롤러](overview/01-controllers.md)
