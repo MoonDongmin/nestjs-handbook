@@ -8,3 +8,4 @@
 - [Controllers](overview/01-controllers.md)
 - [Providers](overview/02-providers.md)
 - [Modules](overview/03-modules.md)
+- [Middleware](overview/04-middleware.md)
