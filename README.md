@@ -9,3 +9,5 @@
 - [Providers](overview/02-providers.md)
 - [Modules](overview/03-modules.md)
 - [Middleware](overview/04-middleware.md)
+- [Exception filters](overview/05-exception-filters.md)
+- [Pipes](overview/06-pipes.md)
