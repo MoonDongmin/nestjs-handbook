@@ -15,6 +15,7 @@ import {Cat}                 from "./interfaces/cat.interface";
 import {ForbiddenException}  from "../exception/forbidden.exception";
 import {HttpExceptionFilter} from "../exception/http-exception.filter";
 import {ValidationPipe}      from "../pipe/validation.pipe";
+import {Roles}               from "../guard/roles.decorator";
 
 @Controller("cats")
 export class CatsController {
@@ -22,7 +23,7 @@ export class CatsController {
     }
 
     @Post()
-    @UseFilters(new HttpExceptionFilter())
+    @Roles(["admin"])
     async create(@Body(new ValidationPipe()) createCatDto: CreateCatDto) {
         this.catsService.create(createCatDto);
     }

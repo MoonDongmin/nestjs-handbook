@@ -11,3 +11,4 @@
 - [Middleware](overview/04-middleware.md)
 - [Exception filters](overview/05-exception-filters.md)
 - [Pipes](overview/06-pipes.md)
+- [Guards](overview/07-guards.md)
