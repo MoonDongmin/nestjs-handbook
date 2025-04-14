@@ -3,20 +3,18 @@ import {
     Get,
     Post,
     Body,
-    HttpException,
-    HttpStatus,
-    UseFilters,
     Param,
     ParseIntPipe,
+    UseInterceptors,
 }                            from "@nestjs/common";
 import {CreateCatDto}        from "./dto/create-cat.dto";
 import {CatsService}         from "./cats.service";
 import {Cat}                 from "./interfaces/cat.interface";
-import {ForbiddenException}  from "../exception/forbidden.exception";
-import {HttpExceptionFilter} from "../exception/http-exception.filter";
 import {ValidationPipe}      from "../pipe/validation.pipe";
 import {Roles}               from "../guard/roles.decorator";
+import {TransformInterceptor} from "../interceptor/transform.interceptor";
 
+@UseInterceptors(TransformInterceptor)
 @Controller("cats")
 export class CatsController {
     constructor(private catsService: CatsService) {
@@ -30,7 +28,9 @@ export class CatsController {
 
     @Get()
     async findAll(): Promise<Cat[]> {
-        throw new ForbiddenException();
+        return this.catsService.findAll();
+        // throw new ForbiddenException();
+
     }
 
     @Get(":id")
