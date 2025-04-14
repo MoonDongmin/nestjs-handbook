@@ -18,3 +18,4 @@
 - [Pipes](overview/06-pipes.md)
 - [Guards](overview/07-guards.md)
 - [Interceptors](overview/08-interceptors.md)
+- [Custom decorators](overview/09-custom-decorators.md)
