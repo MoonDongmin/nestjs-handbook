@@ -19,5 +19,6 @@
 - [Guards](overview/07-guards.md)
 - [Interceptors](overview/08-interceptors.md)
 - [Custom decorators](overview/09-custom-decorators.md)
+- [Dependency Injection & Inversion of Control](overview/10-Dependency_Injection%26Inversion_of_Control.md)
 
 ## Techniques
