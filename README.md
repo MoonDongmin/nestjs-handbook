@@ -22,3 +22,6 @@
 - [Dependency Injection & Inversion of Control](overview/10-Dependency_Injection%26Inversion_of_Control.md)
 
 ## Techniques
+[Configuration](techniques/01-configuration.md)
+
+[Docker](techniques/02-docker.md)
