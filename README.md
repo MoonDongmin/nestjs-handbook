@@ -29,3 +29,5 @@
 - [TypeORM](techniques/03-typeorm.md)
 
 - [JWT](techniques/04-jwt.md)
+
+- [Multer](techniques/05-multer.md)
